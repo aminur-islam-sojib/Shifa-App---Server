@@ -59,6 +59,12 @@ SHIFA - SERVER
 │   │   └── env.js
 │   │
 │   └── modules/
+|       ├─ auth/
+│       │   ├─ auth.controller.js
+│       │   ├─ auth.service.js
+│       │   ├─ auth.route.js
+│       │   └─ auth.validation.js (optional)
+|       |
 │       ├── doctor/
 │       │   ├── doctor.controller.js
 │       │   ├── doctor.route.js
@@ -68,7 +74,6 @@ SHIFA - SERVER
 │           ├── patient.controller.js
 │           ├── patient.route.js
 │           └── patient.service.js
-│
 ├── .env
 ├── .gitignore
 ├── package.json
