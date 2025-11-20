@@ -46,23 +46,35 @@ This structure helps keep code organized, scalable, and easy to maintain, even f
 ## 📁 Folder Structure
 
 ```
-project-root/
-│── server.js
-│── package.json
-│── README.md
+SHIFA - SERVER
 │
-├── config/
-│ ├── db.js
-│ └── env.js
+├── node_modules/
 │
 ├── routes/
-│ └── index.js
+│   └── index.js
 │
-└── modules/
-└── doctor/
-├── doctor.route.js
-├── doctor.controller.js
-└── doctor.service.js
+├── src/
+│   ├── config/
+│   │   ├── db.js
+│   │   └── env.js
+│   │
+│   └── modules/
+│       ├── doctor/
+│       │   ├── doctor.controller.js
+│       │   ├── doctor.route.js
+│       │   └── doctor.service.js
+│       │
+│       └── patient/
+│           ├── patient.controller.js
+│           ├── patient.route.js
+│           └── patient.service.js
+│
+├── .env
+├── .gitignore
+├── package.json
+├── package-lock.json
+├── README.md
+└── server.js
 ```
 
 ---
