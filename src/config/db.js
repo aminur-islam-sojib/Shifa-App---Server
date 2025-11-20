@@ -1,8 +1,6 @@
-// const { MongoClient, ServerApiVersion } = require("mongodb");
 import { MongoClient, ServerApiVersion } from "mongodb";
 import { ENV } from "./env.js";
 
-// Build URI from environment when credentials and host are provided, otherwise use localhost.
 const uri =
   ENV.DB_USERNAME &&
   ENV.DB_PASSWORD &&
@@ -26,7 +24,6 @@ export const connectDB = async () => {
     await client.connect();
     db = client.db("shifaDB");
 
-    // Send a ping to confirm a successful connection
     await client.db("admin").command({ ping: 1 });
     console.log(
       "Pinged your deployment. You successfully connected to MongoDB!"

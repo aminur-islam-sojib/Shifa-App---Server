@@ -1,8 +1,10 @@
 // server.js
 import express from "express";
-import { ENV } from "./config/env.js";
-import { connectDB } from "./config/db.js";
+
+// import { ENV } from "/src/config/env.js";
+import { connectDB } from "./src/config/db.js";
 import routes from "./routes/index.js";
+import { ENV } from "./src/config/env.js";
 
 const app = express();
 app.use(express.json());
