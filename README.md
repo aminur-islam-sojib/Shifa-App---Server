@@ -74,7 +74,7 @@ Create `.env` file in your root folder:
 ```
 PORT = 3000
 DB_USERNAME = shifaDB
-DB_PASSWORD = 8Jigp744VubfO9Mk
+DB_PASSWORD = ********
 DB_HOST = mongodb.tamg8lo.mongodb.net
 ```
 
