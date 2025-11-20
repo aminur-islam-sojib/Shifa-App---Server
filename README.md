@@ -112,7 +112,7 @@ This separation keeps the backend clean and maintainable.
 ### Get all doctors
 
 ```
-GET http://localhost:5000/api/doctors
+GET http://localhost:3000/doctors
 ```
 
 Sample response:
@@ -148,7 +148,7 @@ npm start
 You should see:
 
 ```
-🚀 Server running on port 5000
+🚀 Server running on port 3000
 MongoDB Connected!
 ```
 
@@ -159,13 +159,13 @@ MongoDB Connected!
 Open:
 
 ```
-http://localhost:5000/api/doctors
+http://localhost:3000/doctors
 ```
 
 ### Using cURL
 
 ```
-curl http://localhost:5000/api/doctors
+curl http://localhost:3000/doctors
 ```
 
 ## 🧩 Doctor Module (Example Logic)
