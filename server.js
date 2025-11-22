@@ -13,9 +13,9 @@ app.use(express.json());
 await connectDB();
 
 // Routes
-app.use("/", routes);
+app.use("/api", routes);
 
 // Start server
 app.listen(ENV.PORT, () => {
-  console.log(`🚀 Server running on port ${ENV.PORT}`);
+  console.log(`🚀Your Server is Running http://localhost:${ENV.PORT}`);
 });
