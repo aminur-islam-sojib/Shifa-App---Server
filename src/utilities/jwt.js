@@ -1,5 +1,8 @@
-import { ENV } from "../../config/env.js";
+import { ENV } from "../config/env.js";
 import jwt from "jsonwebtoken";
+import express from "express";
+
+const router = express.Router();
 
 export const getToken = (req, res) => {
   const data = req.body;
@@ -7,3 +10,7 @@ export const getToken = (req, res) => {
   console.log(token);
   res.Jwt_Token = token;
 };
+
+router.post("/getJwtToken", getToken);
+
+export default router;
